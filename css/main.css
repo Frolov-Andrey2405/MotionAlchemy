@@ -12,7 +12,7 @@
 }
 
 @font-face {
-    font-family: arsenal_f;
+    font-family: 'arsenal_f';
     src: url(../assets/fonts/arsenal-regular.woff2);
 }
 
@@ -21,7 +21,7 @@ body {
 }
 
 .magic-list {
-    font-family: arsenal_f, sans-serif;
+    font-family: 'arsenal_f', sans-serif;
     font-size: calc(var(--index) * 2.75);
     padding: calc(var(--index) * 2.75);
 }
@@ -31,9 +31,9 @@ body {
     color: var(--black);
     text-decoration: none;
     display: block;
-    line-height: .9;
+    line-height: 0.9;
     padding: calc(var(--index) * 3) calc(var(--index) * 7.5);
-    border-bottom: 1px solid rgb(0 0 0 / .09);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.09);
     counter-increment: my-counter;
 }
 
@@ -50,12 +50,12 @@ body {
 .magic-list__item::before {
     content: '(0' counter(my-counter) ')';
     position: absolute;
-    font-size: calc(var(--index) * .95);
+    font-size: calc(var(--index) * 0.95);
     margin-left: calc(var(--index) * -2.25);
     margin-top: calc(var(--index) / 2);
-    letter-spacing: .5px;
+    letter-spacing: 0.5px;
     transition: transform var(--transition);
-    transition-delay: .025s;
+    transition-delay: 0.025s;
     will-change: transform;
 }
 
@@ -70,8 +70,8 @@ body {
     position: fixed;
     width: var(--width);
     height: 0;
-    top: calc(var(--height) * -.5);
-    left: calc(var(--width) * -.5);
+    top: calc(var(--height) * -0.5);
+    left: calc(var(--width) * -0.5);
     overflow: hidden;
     transform: translate3d(var(--move-x), var(--move-y), 0);
     transition: transform var(--transition-cursor), height 1s ease;
@@ -88,8 +88,8 @@ body {
     position: relative;
     width: calc(var(--width) * 2);
     height: calc(var(--height) * 2);
-    top: calc(var(--height) * -.4);
-    left: calc(var(--width) * -.25);
+    top: calc(var(--height) * -0.4);
+    left: calc(var(--width) * -0.25);
     background-size: cover;
     background-position: center;
     transform: var(--cursor-transform) scale(1.5);
